@@ -36,22 +36,22 @@ function calculateAndDisplayFlames(name1, name2) {
     let gifSource = "";
     switch (flamesResult) {
         case 'Friend':
-            gifSource = 'path/to/friend.gif'; // Change this to your friend's GIF URL
+            gifSource = 'https://i.pinimg.com/originals/e0/99/32/e09932efb91cc5a1bf98fc2daf268105.gif'; // Change this to your friend's GIF URL
             break;
         case 'Love':
-            gifSource = 'path/to/love.gif'; // Change this to your love GIF URL
+            gifSource = 'https://i.pinimg.com/originals/fa/04/cc/fa04ccdf3e8a38a572513394a8dca0d7.gif'; // Change this to your love GIF URL
             break;
         case 'Affection':
-            gifSource = 'path/to/affection.gif'; // Change this to your affection GIF URL
+            gifSource = 'https://i.pinimg.com/originals/93/ff/34/93ff34b2f210c60f5ead72c5e5e34cd4.gif'; // Change this to your affection GIF URL
             break;
         case 'Marriage':
-            gifSource = 'path/to/marriage.gif'; // Change this to your marriage GIF URL
+            gifSource = 'https://i.pinimg.com/originals/80/4a/7b/804a7b8872de5db7d3dee11a94a89449.gif'; // Change this to your marriage GIF URL
             break;
         case 'Enemy':
-            gifSource = 'path/to/enemy.gif'; // Change this to your enemy GIF URL
+            gifSource = 'https://i.pinimg.com/originals/da/c7/c5/dac7c51ffd17db5b23d5bbfc5c7dd9d5.gif'; // Change this to your enemy GIF URL
             break;
         case 'Siblings':
-            gifSource = 'path/to/siblings.gif'; // Change this to your siblings GIF URL
+            gifSource = 'https://i.pinimg.com/originals/3f/e8/43/3fe8433ae317c57b9ff0268d8a1e8b2e.gif'; // Change this to your siblings GIF URL
             break;
         default:
             gifSource = 'path/to/default.gif'; // Default GIF if no result matches
