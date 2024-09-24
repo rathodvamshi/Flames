@@ -85,9 +85,9 @@ button:hover {
 }
 
 .gif-container {
-    margin-top: 8px;
-    margin-bottom: 30px;
-    height: 90px;  /* Adjust this value as needed */
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 170px;  /* Adjust this value as needed */
     width: 100%;    /* Adjust this value as needed */
 }
 
