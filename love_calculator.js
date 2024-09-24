@@ -1,8 +1,22 @@
+let lastLoveName1 = '';
+let lastLoveName2 = '';
+
 document.getElementById('loveForm').addEventListener('submit', function(event) {
     event.preventDefault();
     
     const name1 = document.getElementById('name1').value;
     const name2 = document.getElementById('name2').value;
+
+    // Check if the names are the same as the last used
+    if (name1 === lastLoveName1 && name2 === lastLoveName2) {
+        alert("You've already calculated the love percentage for these names!");
+        return; // Exit the function without calculating again
+    }
+
+    // Update the last used names
+    lastLoveName1 = name1;
+    lastLoveName2 = name2;
+
     const lovePercentage = Math.floor(Math.random() * 101); // Random love percentage
 
     // Display result
