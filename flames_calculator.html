@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flames Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Flames Calculator</h1>
+        <form id="flamesForm">
+            <input type="text" id="flamesName1" placeholder="Enter Name 1" required>
+            <input type="text" id="flamesName2" placeholder="Enter Name 2" required>
+            <button type="submit">Calculate Flames</button>
+        </form>
+        <div class="result-container">
+            <div class="result"></div>
+            <div class="gif-container" id="gifContainer"></div> <!-- GIF container -->
+        </div>
+        
+        <div id="flamesResult" class="result"></div>
+        <div class="nav-buttons">
+            <button onclick="location.href='love_calculator.html'">Go to Love Calculator</button>
+            <button onclick="location.href='index.html'">Home</button>
+        </div>
+    </div>
+    <script src="./flames_calculator.js"></script>
+</body>
+</html>

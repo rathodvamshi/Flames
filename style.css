@@ -1,0 +1,133 @@
+body {
+    font-family: 'Georgia', serif; /* Changed font for a more romantic feel */
+    background: linear-gradient(135deg, #ffcccb, #ffebee); /* Soft pink gradient background */
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Use flexbox for centering */
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    height: 100vh; /* Full viewport height */
+}
+
+.container {
+    max-width: 600px;
+    margin: 20px auto; /* Center the container */
+    padding: 30px; /* Increased padding for a spacious feel */
+    background: rgba(255, 255, 255, 0.7); /* Slightly more transparent */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+    animation: slideIn 0.5s ease-out; /* Slide in animation */
+    position: relative; /* Enable positioning for reflection */
+    overflow: hidden; /* Hide overflow for reflection */
+}
+
+/* Add the mirror effect */
+.container::after {
+    content: ""; /* Empty content for the reflection */
+    position: absolute; /* Position it absolutely within the container */
+    bottom: -50%; /* Position it below the bottom of the container */
+    left: 0; /* Align to the left */
+    width: 100%; /* Full width */
+    height: 50%; /* Half height for the reflection */
+    background: rgba(255, 255, 255, 0.5); /* Slightly more transparent background for reflection */
+    filter: blur(10px); /* Blur for a soft reflection effect */
+    transform: scaleY(-1); /* Flip vertically */
+    z-index: -1; /* Send behind the content */
+    opacity: 0.5; /* Opacity for the reflection */
+}
+
+/* Optional: Add some transition effect to the container */
+.container:hover {
+    box-shadow: 0 8px 60px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}
+
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #e91e63; /* Romantic pink color for headings */
+    animation: fadeIn 1s, pulse 1.5s infinite; /* Fade in and pulse animations */
+}
+
+input {
+    width: 90%;
+    padding: 12px; /* Increased padding for a more comfortable input */
+    margin: 12px 0; /* More spacing between inputs */
+    border: 2px solid #f06292; /* Soft pink border */
+    border-radius: 8px; /* More rounded corners */
+    transition: border-color 0.3s, transform 0.2s; /* Add transform for subtle effect */
+}
+
+input:focus {
+    border-color: #e91e63; /* Darker pink when focused */
+    outline: none;
+    transform: scale(1.02); /* Slightly enlarge on focus */
+}
+
+button {
+    width: 48%;
+    padding: 12px;
+    background: #f06292; /* Soft pink background */
+    color: white;
+    border: none;
+    border-radius: 8px; /* Rounded corners */
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s;
+    font-weight: bold; /* Make button text bold */
+}
+
+button:hover {
+    background: #e91e63; /* Darker pink on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.nav-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px; /* More spacing above navigation buttons */
+}
+
+.result {
+    text-align: center;
+    margin: 30px 0;
+    font-size: 28px; /* Slightly larger font for results */
+    color: #d81b60; /* Romantic dark pink color for results */
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out, transform 0.5s; /* Add transform for effect */
+    transform: translateY(20px); /* Start slightly lower */
+}
+
+.result.show {
+    opacity: 1; /* Fade in effect */
+    transform: translateY(0); /* Move to original position */
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateY(-20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+}
+.gif-container {
+    margin-top: 20px; /* Spacing above the GIF */
+    text-align: center; /* Center the GIF */
+}
+
+.gif-container img {
+    max-width: 100%; /* Responsive GIF */
+    border-radius: 10px; /* Optional rounding */
+}
+
